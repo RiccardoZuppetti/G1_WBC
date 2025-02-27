@@ -82,9 +82,8 @@ while simulation_app.is_running():
     if my_world.is_stopped():
         reset_needed = True
     if my_world.is_playing():
-        while(True):
-            # move forward
-            base_command = np.array([1, 0, 0, 0.75]) # x_vel, y_vel, yaw, height
+        # move forward
+        base_command = np.array([1, 0, 0, 0.75]) # x_vel, y_vel, yaw, height
 
 
 simulation_app.close()
