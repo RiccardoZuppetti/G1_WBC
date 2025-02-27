@@ -76,7 +76,6 @@ my_world.reset()
 # robot command
 base_command = np.zeros(4)
 
-i = 0
 while simulation_app.is_running():
     my_world.step(render=True)
     if my_world.is_stopped():
